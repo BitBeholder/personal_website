@@ -12,3 +12,11 @@
         margin-right: 5%;
     }
 }
+
+.hidden {
+    display: none;
+}
+
+#image-gallery img {
+    margin: 10px;
+}
