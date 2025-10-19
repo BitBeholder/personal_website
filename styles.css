@@ -42,4 +42,6 @@ img[src="../public/1year/0FFB2A3C-7E9A-49C7-98F1-F10FE3EBAF24_1_105_c.jpeg"]:hov
     cursor: url("https://ani.cursors-4u.net/games/gam-16/gam1540.cur"), /* admin@fr8.so*/auto !important;
 }
   
-
+img[src="public/DSC08495 2 (1).jpeg"]:hover {
+    cursor: url("https://ani.cursors-4u.net/smiley/smi-3/smi311.cur"), auto !important;
+  }
