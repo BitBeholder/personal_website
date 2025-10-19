@@ -6,10 +6,10 @@
     padding-bottom: 2%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .content {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
@@ -20,3 +20,15 @@
 #image-gallery img {
     margin: 10px;
 }
+
+@media (max-width: 1000px) {
+    button {
+      transform: scale(1.4);        /* visually enlarges buttons */
+      transform-origin: center;     /* keeps scaling centered */
+      margin: 14px;                  /* adds spacing between buttons */
+      font-size: 18px !important;
+      margin-left: 30px;   /* makes text more readable */
+    }
+  }
+
+

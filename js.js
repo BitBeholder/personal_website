@@ -1,33 +1,23 @@
-document.getElementById("toggle-images-1").addEventListener("click", function () {
-    const gallery1 = document.getElementById("image-gallery-1");
-    if (gallery1.classList.contains("hidden")) {
-        gallery1.classList.remove("hidden");
-        this.textContent = "Hide Pictures";
-    } else {
-        gallery1.classList.add("hidden");
-        this.textContent = "Show Pictures";
+document.addEventListener("DOMContentLoaded", function () {
+    function bindToggle(btnId, galleryId) {
+      const btn = document.getElementById(btnId);
+      const gallery = document.getElementById(galleryId);
+      if (!btn || !gallery) return;
+  
+      const originalText = btn.textContent;
+  
+      btn.addEventListener("click", function () {
+        gallery.classList.toggle("hidden");
+        this.textContent = gallery.classList.contains("hidden")
+          ? originalText
+          : "Hide Pictures";
+      });
     }
-});
-
-document.getElementById("toggle-images-2").addEventListener("click", function () {
-    const gallery2 = document.getElementById("image-gallery-2");
-    if (gallery2.classList.contains("hidden")) {
-        gallery2.classList.remove("hidden");
-        this.textContent = "Hide Pictures";
-    } else {
-        gallery2.classList.add("hidden");
-        this.textContent = "Show Pictures";
-    }
-});
-
-document.getElementById("toggle-images-3").addEventListener("click", function () {
-    const gallery2 = document.getElementById("image-gallery-3");
-    if (gallery2.classList.contains("hidden")) {
-        gallery2.classList.remove("hidden");
-        this.textContent = "Hide Pictures";
-    } else {
-        gallery2.classList.add("hidden");
-        this.textContent = "Show Pictures";
-    }
-});
-
+  
+    bindToggle("toggle-images-1", "image-gallery-1");
+    bindToggle("toggle-images-2", "image-gallery-2");
+    bindToggle("toggle-images-3", "image-gallery-3");
+    bindToggle("toggle-images-4", "image-gallery-4");
+    bindToggle("toggle-images-5", "image-gallery-5");
+  });
+  
