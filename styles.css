@@ -1,4 +1,3 @@
-
 .content {
     margin-left: 20%;
     margin-right: 20%;
@@ -31,4 +30,16 @@
     }
   }
 
+* {
+    cursor: url("https://ani.cursors-4u.net/games/gam-16/gam1551.cur"), auto !important;
+  }
+  
+a:hover, button:hover {
+    cursor: url("https://ani.cursors-4u.net/games/gam-16/gam1536.cur"), auto !important;
+}
+
+img[src="../public/1year/0FFB2A3C-7E9A-49C7-98F1-F10FE3EBAF24_1_105_c.jpeg"]:hover {
+    cursor: url("https://ani.cursors-4u.net/games/gam-16/gam1540.cur"), /* admin@fr8.so*/auto !important;
+}
+  
 
